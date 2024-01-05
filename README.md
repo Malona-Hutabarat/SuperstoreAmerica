@@ -141,3 +141,24 @@ order by  3 desc
 | 11          | Supplies     | 451,998   | 6        |
 | 11          | Labels       | 207,928   | 11       |
 | 11          | Fasteners    | 138,212   | 9        |
+### 6 How long does it take for delivery of Sub_Category to various states, city, and regions?
+```RUBY
+select
+	Region, State, City, Ship_Mode, Sub_Category,Delivery_Day, sum (Sales) Sales
+from Newdata
+group by Region, State, City, Ship_Mode, Sub_Category, Delivery_Day
+order by  Sales desc
+```
+| Region  | State        | City          | Ship_Mode      | Sub_Category | Delivery_Day | Sales    |
+|---------|--------------|---------------|----------------|--------------|--------------|----------|
+| South   | Florida      | Jacksonville  | Standard Class | Machines     | 4            | 23459,78 |
+| Central | Indiana      | Lafayette     | Standard Class | Copiers      | 6            | 17499,95 |
+| West    | Washington   | Seattle       | First Class    | Copiers      | 3            | 13999,96 |
+| East    | New York     | New York City | Standard Class | Machines     | 3            | 12604,41 |
+| East    | New York     | New York City | First Class    | Copiers      | 3            | 11759,96 |
+| East    | Delaware     | Newark        | Standard Class | Copiers      | 4            | 10499,97 |
+| Central | Michigan     | Detroit       | Standard Class | Binders      | 3            | 10197,72 |
+| East    | New York     | New York City | Same Day       | Machines     | 1            | 9829,41  |
+| East    | New York     | New York City | Standard Class | Chairs       | 5            | 9617,742 |
+| East    | Pennsylvania | Philadelphia  | Standard Class | Copiers      | 5            | 9479,952 |
+| ......  | ..........   | ...........   | ...........    | ........     | .......      | ......   |
