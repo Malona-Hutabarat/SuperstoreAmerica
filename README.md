@@ -7,8 +7,7 @@ Sub_Category, Category, Region, State, City, Segment
 * yyyy-mm-dd :  day, month, and year
 * Data: Date_Order, Ship_Order
 * Calculate Delivery Date : Ship_Date - Order_Date
-##[Superstore.xlsx](https://github.com/Malona-Hutabarat/SuperstoreAmerica/files/13840915/Superstore.xlsx)
-# **3. Save Data to Store America**
+### **3. Save Data to Store America**
 
 ```RUBY
 select 
