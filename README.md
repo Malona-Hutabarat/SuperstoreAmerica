@@ -1,7 +1,8 @@
 # SuperstoreAmerica
 
 ### **1. Select Data** 
-Sub_Category, Category, Region, State, City, Segment, Sales, Quantity, Discount, Profit,
+#### [The Raw Data](https://github.com/Malona-Hutabarat/SuperstoreAmerica/blob/main/Superstore.xlsx)
+* Sub_Category, Category, Region, State, City, Segment, Sales, Quantity, Discount, Profit,
 Sub_Category, Category, Region, State, City, Segment
 ### **2. Convert Date** 
 * yyyy-mm-dd :  day, month, and year
