@@ -7,7 +7,7 @@ Sub_Category, Category, Region, State, City, Segment
 * yyyy-mm-dd :  day, month, and year
 * Data: Date_Order, Ship_Order
 * Calculate Delivery Date : Ship_Date - Order_Date
-### **3. Save Data to Store America**
+### **3. Save Data to StoreAmerica**
 
 ```RUBY
 select 
